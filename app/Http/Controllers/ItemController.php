@@ -102,7 +102,7 @@ class ItemController extends Controller
         $item = Item::findOrFail($id);
 
         // Delete the image from the images folder
-        Storage::delete('public/' . $item->picture);
+        $item->delete();
 
         // Soft delete the item
         $item->delete();
