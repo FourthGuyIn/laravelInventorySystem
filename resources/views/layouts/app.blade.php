@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your App Title</title>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <title>Inventory Management</title>
 </head>
 <body>
     @yield('content')
