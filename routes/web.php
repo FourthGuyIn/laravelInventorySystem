@@ -21,3 +21,5 @@ Route::delete('/items/{id}', [ItemController::class, 'destroy']);
 Route::get('/', function () {
     return view('welcome');
 });
+
+?>
